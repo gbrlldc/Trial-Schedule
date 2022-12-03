@@ -8,7 +8,8 @@ def job1():
 def job2():
     print("Hello world in hours!")
 
-#Ask if user would like to schedule every() minute or every hourS
+#Ask if user would like to schedule every() minute or every hours 
+#note - this is case sensitive
 input1 = input ('minutes or hours? ')
 
 #If minutes; 
@@ -22,7 +23,7 @@ elif input1 == 'hours':
     schedule.every(Hours).hours.do(job2)
 
 while True:
-    # Checks whether a scheduled tas
+    # Checks whether a scheduled task
     # is pending to run or not
     schedule.run_pending()
     time.sleep(1)
