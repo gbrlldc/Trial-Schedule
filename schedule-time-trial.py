@@ -16,7 +16,7 @@ if input1 == 'minutes':
     Minutes = int(input("Number in minutes:"))
     schedule.every(Minutes).minutes.do(job1)
 
-
+#if hours;
 elif input1 == 'hours':
     Hours = int(input("Number in hours:"))
     schedule.every(Hours).hours.do(job2)
